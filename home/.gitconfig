@@ -2,6 +2,6 @@
 	name = Ryang Sohn
 	email = loop.infinitely@gmail.com
 [core]
-	excludesFile = /Users/ryangsohn/.gitignore-global
+	excludesFile = $HOME/.gitignore-global
 [http]
-	cookiefile = /Users/ryangsohn/.gitcookies
+	cookiefile = $HOME/.gitcookies
