@@ -1,0 +1,7 @@
+[user]
+	name = Ryang Sohn
+	email = loop.infinitely@gmail.com
+[core]
+	excludesFile = /Users/ryangsohn/.gitignore-global
+[http]
+	cookiefile = /Users/ryangsohn/.gitcookies
