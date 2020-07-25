@@ -50,3 +50,5 @@ function mdcd() {
     mkdir $1
     cd $1
 }
+
+function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
