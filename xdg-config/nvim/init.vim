@@ -34,6 +34,7 @@ Plug 'pboettch/vim-cmake-syntax'
 Plug 'tpope/vim-liquid'
 Plug 'keith/swift.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dart-lang/dart-vim-plugin'
 
 "should be last
 Plug 'ryanoasis/vim-devicons'
