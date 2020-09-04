@@ -69,10 +69,9 @@ let g:tex_flavor = 'tex'
 let g:tex_conceal = ''
 let g:vimtex_fold_manual = 1
 let g:vimtex_latexmk_continuous = 1
-let g:vimtex_compiler_progname = 'luatex'
+let g:vimtex_compiler_progname = 'xelatex'
 let g:vimtex_view_method = 'general'
 let g:vimtex_view_general_method = 'zathura'
-let g:vimtex_latexmk_options='-pdf -pdflatex="xelatex -synctex=1 \%S \%O" -verbose -file-line-error -interaction=nonstopmode'
 
 "editorconfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
@@ -89,3 +88,5 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
+let java_highlight_functions = 1
