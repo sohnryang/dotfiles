@@ -52,3 +52,5 @@ function mdcd() {
 }
 
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
+
+export PATH=$HOME/.cargo/bin:$PATH
