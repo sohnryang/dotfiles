@@ -20,7 +20,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'HerringtonDarkholme/yats.vim'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 Plug 'vim-python/python-syntax'
 Plug 'lervag/vimtex'
 Plug 'mattn/emmet-vim'
