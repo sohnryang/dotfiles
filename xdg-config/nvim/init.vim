@@ -56,6 +56,9 @@ let g:onedark_terminal_italics = 1
 colorscheme onedark
 let g:airline_theme='onedark'
 
+"control-p for fzf
+noremap <C-p> :Files<CR>
+
 "NERDTree
 let NERDTreeShowHidden = 1
 
