@@ -14,9 +14,6 @@ plugins=(
     vi-mode
     virtualenv
     web-search
-    you-should-use
-    zsh-autosuggestions
-    zsh-hangul
     zsh-syntax-highlighting
 )
 ZSH_THEME=lambda-minimal
