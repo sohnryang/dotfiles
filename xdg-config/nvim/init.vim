@@ -34,6 +34,13 @@ Plug 'tpope/vim-liquid'
 Plug 'keith/swift.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'lambdalisue/suda.vim'
+Plug 'junegunn/fzf.vim'
+Plug 'Shirk/vim-gas'
+Plug 'Glench/Vim-Jinja2-Syntax'
+Plug 'tikhomirov/vim-glsl'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'andweeb/presence.nvim'
 
 "should be last
 Plug 'ryanoasis/vim-devicons'
@@ -80,6 +87,9 @@ let g:clang_format#code_style = 'google'
 
 "coc.nvim settings
 set cmdheight=2
+
+"GNU assembly filetype
+au BufNewFile,BufRead *.S setlocal ft=gas
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
