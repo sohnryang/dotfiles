@@ -1,28 +1,6 @@
 {
-  "languageserver": {
-    "clangd": {
-      "command": "clangd",
-      "args": [
-        "--background-index"
-      ],
-      "rootPatterns": [
-        "compile_flags.txt",
-        "compile_commands.json",
-        ".vim/",
-        ".git/",
-        ".hg/"
-      ],
-      "filetypes": [
-        "c",
-        "cpp",
-        "objc",
-        "objcpp"
-      ]
-    }
-  },
-  "python.jediEnabled": false,
-  "python.linting.pylintEnabled": true,
-  "python.linting.flake8Enabled": false,
-  "python.linting.pylintArgs": ["--rcfile=~/.pylintrc"],
-  "java.jdt.ls.vmargs": "-noverify -Xmx1G"
+  "java.jdt.ls.vmargs": "-noverify -Xmx1G",
+  "python.formatting.provider": "black",
+  "clangd.fallbackFlags": ["-std=c++17"],
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact", "python", "rust", "c", "cpp", "java"]
 }
