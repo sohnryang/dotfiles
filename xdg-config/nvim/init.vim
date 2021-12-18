@@ -91,6 +91,7 @@ let g:clang_format#code_style = 'google'
 
 "coc.nvim settings
 set cmdheight=2
+noremap <F2> :call CocActionAsync('rename')<CR>
 
 "GNU assembly filetype
 au BufNewFile,BufRead *.S setlocal ft=gas
