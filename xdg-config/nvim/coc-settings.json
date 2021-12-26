@@ -1,6 +1,5 @@
 {
   "java.jdt.ls.vmargs": "-noverify -Xmx1G",
   "python.formatting.provider": "black",
-  "clangd.fallbackFlags": ["-std=c++17"],
   "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact", "python", "rust", "c", "cpp", "java"]
 }
