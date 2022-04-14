@@ -1,6 +1,7 @@
 [user]
 	name = Ryang Sohn
 	email = loop.infinitely@gmail.com
+	signingkey = BC9999863F4CA1F6D2ABA5E50A688755EA0C34FA
 [core]
 	excludesFile = $HOME/.gitignore-global
 [http]
