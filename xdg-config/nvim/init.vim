@@ -75,11 +75,8 @@ set mouse=a
 let g:python_highlight_all=1
 
 "vimtex
-let g:tex_flavor = 'tex'
 let g:tex_conceal = ''
 let g:vimtex_fold_manual = 1
-let g:vimtex_latexmk_continuous = 1
-let g:vimtex_compiler_progname = 'xelatex'
 let g:vimtex_view_method = 'general'
 let g:vimtex_view_general_method = 'zathura'
 
@@ -104,3 +101,6 @@ function! s:show_documentation()
 endfunction
 
 let java_highlight_functions = 1
+
+"fzf.vim settings
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
