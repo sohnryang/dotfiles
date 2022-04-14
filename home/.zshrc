@@ -24,6 +24,8 @@ export LANG=en_US.UTF-8
 export VISUAL=nvim
 export EDITOR=nvim
 
+export ZSH_HIGHLIGHT_STYLES[comment]='none'
+
 # neovim xdg
 export XDG_DATA_HOME=$HOME/.local/share
 
