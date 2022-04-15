@@ -1,7 +1,7 @@
 local wezterm = require 'wezterm';
 
 return {
-  font = wezterm.font_with_fallback({"Cascadia Code PL", "Noto Sans CJK KR"}),
+  font = wezterm.font_with_fallback({"Cascadia Code PL", "NotoSansMono Nerd Font", "Noto Sans CJK KR"}),
   font_size = 11.0,
   colors = {
     foreground = "#abb2bf",
@@ -12,5 +12,8 @@ return {
     ansi = {"#21252b", "#e06c75", "#98c379", "#e5c07b", "#61afef", "#c678dd", "#56b6c2", "#abb2bf"},
     brights = {"#21252b", "#e06c75", "#98c379", "#e5c07b", "#61afef", "#c678dd", "#56b6c2", "#abb2bf"},
     compose_color = "red",
+  },
+  window_frame = {
+    font = wezterm.font({ family = "Cascadia Code PL" }),
   },
 }
