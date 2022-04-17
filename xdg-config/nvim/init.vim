@@ -38,6 +38,7 @@ Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'tikhomirov/vim-glsl'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'andweeb/presence.nvim'
+Plug 'honza/vim-snippets'
 
 "should be last
 Plug 'ryanoasis/vim-devicons'
@@ -88,6 +89,8 @@ let g:clang_format#code_style = 'google'
 "coc.nvim settings
 set cmdheight=2
 noremap <F2> :call CocActionAsync('rename')<CR>
+imap <C-l> <Plug>(coc-snippets-expand)
+vmap <C-j> <Plug>(coc-snippets-select)
 
 "GNU assembly filetype
 au BufNewFile,BufRead *.S setlocal ft=gas
