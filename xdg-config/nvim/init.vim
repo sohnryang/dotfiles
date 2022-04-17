@@ -75,10 +75,11 @@ set mouse=a
 let g:python_highlight_all=1
 
 "vimtex
-let g:tex_conceal = ''
 let g:vimtex_fold_manual = 1
 let g:vimtex_view_method = 'general'
 let g:vimtex_view_general_method = 'zathura'
+set conceallevel=1
+let g:tex_conceal='abdmg'
 
 "editorconfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
