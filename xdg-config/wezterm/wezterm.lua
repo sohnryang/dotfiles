@@ -1,7 +1,7 @@
 local wezterm = require 'wezterm';
 
 return {
-  font = wezterm.font_with_fallback({"Cascadia Code PL", "NotoSansMono Nerd Font", "Noto Sans CJK KR"}),
+  font = wezterm.font_with_fallback({"Cascadia Code PL", "Symbols Nerd Font", "NotoSansMono Nerd Font", "Noto Sans CJK KR", "Noto Sans Symbols", "Noto Sans Symbols2"}),
   font_size = 11.0,
   colors = {
     foreground = "#abb2bf",
