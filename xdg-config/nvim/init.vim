@@ -54,7 +54,6 @@ let g:onedark_terminal_italics = 1
 colorscheme onedark
 let g:airline_theme='onedark'
 let g:airline_powerline_fonts = 1
-let g:airline_section_z = 'line %l/%L, col %v'
 
 "control-p for fzf
 noremap <C-p> :Files<CR>
