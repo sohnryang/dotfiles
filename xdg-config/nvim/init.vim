@@ -6,9 +6,6 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-let g:python_host_prog=$HOME.'/.nvim-py2/bin/python'
-let g:python3_host_prog=$HOME.'/.nvim-py3/bin/python'
-
 "packages
 call plug#begin('~/.vim/plugged')
 
