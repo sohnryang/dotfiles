@@ -6,16 +6,16 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+let g:python3_host_prog = '/home/curling_grad/.nvim-py/bin/python'
+
 "packages
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
-Plug 'jelera/vim-javascript-syntax'
 Plug 'Raimondi/delimitMate'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'mhinz/vim-signify'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'vim-python/python-syntax'
 Plug 'lervag/vimtex'
@@ -39,17 +39,17 @@ Plug 'tikhomirov/vim-glsl'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'andweeb/presence.nvim'
 Plug 'honza/vim-snippets'
+Plug 'yuezk/vim-js'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'mfussenegger/nvim-dap'
 
 "should be last
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 "colorscheme
-if !exists('$TMUX')
-    set termguicolors
-else
-    let g:gruvbox_termcolors=16
-endif
+set termguicolors
 let g:onedark_terminal_italics = 1
 colorscheme onedark
 let g:airline_theme='onedark'
@@ -106,3 +106,8 @@ let java_highlight_functions = 1
 
 "fzf.vim settings
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
+"gitsigns
+lua <<EOF
+require('gitsigns').setup()
+EOF
