@@ -13,6 +13,7 @@ return {
     brights = {"#21252b", "#e06c75", "#98c379", "#e5c07b", "#61afef", "#c678dd", "#56b6c2", "#abb2bf"},
     compose_color = "red",
   },
+  default_prog = {"/usr/bin/tmux"},
   window_frame = {
     font = wezterm.font({ family = "Cascadia Code PL" }),
   },
