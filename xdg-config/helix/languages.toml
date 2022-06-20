@@ -1,0 +1,24 @@
+[[language]]
+name = "cpp"
+auto-format = true
+
+[[language]]
+name = "c"
+auto-format = true
+
+[[language]]
+name = "go"
+auto-format = true
+
+[[language]]
+name = "python"
+auto-format = true
+language-server = { command = "pyright-langserver", args = ["--stdio"] }
+
+[[language]]
+name = "javascript"
+auto-format = true
+
+[[language]]
+name = "verilog"
+language-server = { command = "veridian" }
