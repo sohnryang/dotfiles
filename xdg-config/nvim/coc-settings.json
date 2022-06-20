@@ -1,5 +1,23 @@
 {
   "java.jdt.ls.vmargs": "-noverify -Xmx1G",
   "python.formatting.provider": "black",
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact", "python", "rust", "c", "cpp", "java", "json", "go"]
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "python",
+    "rust",
+    "c",
+    "cpp",
+    "java",
+    "json",
+    "go",
+    "tex"
+  ],
+  "languageserver": {
+    "veridian": {
+      "command": "veridian",
+      "filetypes": ["systemverilog", "verilog"]
+    }
+  }
 }
