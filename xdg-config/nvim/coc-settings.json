@@ -11,7 +11,9 @@
     "java",
     "json",
     "go",
-    "tex"
+    "tex",
+    "opencl",
+    "css"
   ],
   "languageserver": {
     "veridian": {
