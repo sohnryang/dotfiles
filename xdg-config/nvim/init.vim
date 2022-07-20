@@ -94,6 +94,9 @@ set cmdheight=2
 noremap <F2> :call CocActionAsync('rename')<CR>
 imap <C-l> <Plug>(coc-snippets-expand)
 vmap <C-j> <Plug>(coc-snippets-select)
+nmap <silent> gd <Plug>(coc-definition)
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
 
 "GNU assembly filetype
 au BufNewFile,BufRead *.S setlocal ft=gas
