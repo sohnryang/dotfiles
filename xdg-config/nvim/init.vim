@@ -43,6 +43,7 @@ Plug 'yuezk/vim-js'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'mfussenegger/nvim-dap'
+Plug 'brgmnn/vim-opencl'
 Plug 'morhetz/gruvbox'
 
 "should be last
