@@ -112,3 +112,16 @@ let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 lua <<EOF
 require('gitsigns').setup()
 EOF
+
+"treesitter
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "c", "go", "rust", "python", "typescript", "tsx" },
+  sync_install = false,
+
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = false,
+  },
+}
+EOF
