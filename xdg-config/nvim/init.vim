@@ -43,6 +43,7 @@ Plug 'yuezk/vim-js'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'mfussenegger/nvim-dap'
+Plug 'morhetz/gruvbox'
 
 "should be last
 Plug 'ryanoasis/vim-devicons'
@@ -51,8 +52,7 @@ call plug#end()
 "colorscheme
 set termguicolors
 let g:onedark_terminal_italics = 1
-colorscheme onedark
-let g:airline_theme='onedark'
+colorscheme gruvbox
 let g:airline_powerline_fonts = 1
 
 "control-p for fzf
