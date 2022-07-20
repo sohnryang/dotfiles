@@ -53,5 +53,6 @@ function mdcd() {
 function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@ ;}
 
 export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
+export PATH="$HOME/opt/cross/bin:$PATH"
 
 eval $(thefuck --alias)
