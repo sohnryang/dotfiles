@@ -1,5 +1,4 @@
 {
-  "java.jdt.ls.vmargs": "-noverify -Xmx1G",
   "python.formatting.provider": "black",
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
