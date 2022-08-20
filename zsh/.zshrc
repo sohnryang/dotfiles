@@ -1,7 +1,6 @@
 export ZSH=$HOME/.oh-my-zsh
 
 plugins=(
-  archlinux
   git
   httpie
   npm
@@ -10,12 +9,18 @@ plugins=(
   python
   rand-quote
   sudo
-  systemd
   vi-mode
   virtualenv
   web-search
   zsh-syntax-highlighting
 )
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  plugins+=(
+    archlinux
+    systemd
+  )
+fi
+
 ZSH_THEME=lambda-minimal
 fpath=( /opt/homebrew/share/zsh/site-functions "${fpath[@]}" )
 
