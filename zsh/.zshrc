@@ -17,6 +17,7 @@ plugins=(
     zsh-syntax-highlighting
 )
 ZSH_THEME=lambda-minimal
+fpath=( /opt/homebrew/share/zsh/site-functions "${fpath[@]}" )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -33,7 +34,8 @@ export XDG_DATA_HOME=$HOME/.local/share
 export PATH=~/.npm-global/bin:$PATH
 
 # zsh-completions
-autoload -U compinit && compinit
+autoload -U compinit
+compinit -i
 
 # gitignore.io command-line tool
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
