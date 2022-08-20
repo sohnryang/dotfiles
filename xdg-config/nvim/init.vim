@@ -94,7 +94,8 @@ let g:clang_format#code_style = 'google'
 
 "coc.nvim settings
 set cmdheight=2
-noremap <F2> :call CocActionAsync('rename')<CR>
+noremap <Leader>r <Cmd>call CocActionAsync('rename')<CR>
+inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#confirm() : "\<Tab>"
 imap <C-l> <Plug>(coc-snippets-expand)
 vmap <C-j> <Plug>(coc-snippets-select)
 nmap <silent> gd <Plug>(coc-definition)
