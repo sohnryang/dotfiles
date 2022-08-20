@@ -1,5 +1,9 @@
 export ZSH=$HOME/.oh-my-zsh
 
+if [[ "$OSTYPE" == "darwin"* ]] then
+  fpath=( /opt/homebrew/share/zsh/site-functions "${fpath[@]}" )
+fi
+
 plugins=(
   git
   httpie
@@ -22,7 +26,6 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 fi
 
 ZSH_THEME=lambda-minimal
-fpath=( /opt/homebrew/share/zsh/site-functions "${fpath[@]}" )
 
 source $ZSH/oh-my-zsh.sh
 
