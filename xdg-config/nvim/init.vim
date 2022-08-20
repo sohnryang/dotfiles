@@ -48,6 +48,8 @@ Plug 'leoluz/nvim-dap-go'
 Plug 'mfussenegger/nvim-dap-python'
 Plug 'brgmnn/vim-opencl'
 Plug 'morhetz/gruvbox'
+Plug 'petRUShka/vim-magma'
+Plug 'petRUShka/vim-sage'
 
 "should be last
 Plug 'ryanoasis/vim-devicons'
