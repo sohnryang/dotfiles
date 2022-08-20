@@ -1,20 +1,20 @@
 export ZSH=$HOME/.oh-my-zsh
 
 plugins=(
-    archlinux
-    git
-    httpie
-    npm
-    pip
-    pylint
-    python
-    rand-quote
-    sudo
-    systemd
-    vi-mode
-    virtualenv
-    web-search
-    zsh-syntax-highlighting
+  archlinux
+  git
+  httpie
+  npm
+  pip
+  pylint
+  python
+  rand-quote
+  sudo
+  systemd
+  vi-mode
+  virtualenv
+  web-search
+  zsh-syntax-highlighting
 )
 ZSH_THEME=lambda-minimal
 fpath=( /opt/homebrew/share/zsh/site-functions "${fpath[@]}" )
@@ -48,8 +48,8 @@ DEFAULT_USER=`whoami`
 
 # mdcd
 function mdcd() {
-    mkdir $1
-    cd $1
+  mkdir $1
+  cd $1
 }
 
 function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@ ;}
