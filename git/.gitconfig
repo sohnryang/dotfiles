@@ -6,3 +6,5 @@
 	excludesFile = $HOME/.gitignore-global
 [http]
 	cookiefile = $HOME/.gitcookies
+[init]
+	defaultBranch = main
