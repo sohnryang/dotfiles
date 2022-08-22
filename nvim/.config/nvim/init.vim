@@ -6,7 +6,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-let g:python3_host_prog = '/home/curling_grad/.nvim-py/bin/python'
+let g:python3_host_prog = $HOME.'/.nvim-py/bin/python'
 
 "packages
 call plug#begin('~/.vim/plugged')
