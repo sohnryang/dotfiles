@@ -32,6 +32,7 @@ Plug 'keith/swift.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'lambdalisue/suda.vim'
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'Shirk/vim-gas'
 Plug 'Glench/Vim-Jinja2-Syntax'
