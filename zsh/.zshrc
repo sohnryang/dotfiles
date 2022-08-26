@@ -6,12 +6,14 @@ fi
 
 plugins=(
   git
+  golang
   httpie
   npm
   pip
   pylint
   python
   rand-quote
+  rust
   sudo
   vi-mode
   virtualenv
