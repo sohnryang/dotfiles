@@ -107,7 +107,10 @@ imap <C-l> <Plug>(coc-snippets-expand)
 vmap <C-j> <Plug>(coc-snippets-select)
 nmap <silent> gd <Plug>(coc-definition)
 xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-line)
+nnoremap <Leader>d <Plug>(coc-definition)
+nnoremap <Leader>en <Plug>(coc-diagnostic-next)
+nnoremap <Leader>ep <Plug>(coc-diagnostic-prev)
 
 "GNU assembly filetype
 au BufNewFile,BufRead *.S setlocal ft=gas
