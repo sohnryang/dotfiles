@@ -56,6 +56,11 @@ Plug 'petRUShka/vim-sage'
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
+"split terminal
+nnoremap <Leader>tt <Cmd>te<CR>
+nnoremap <Leader>th <Cmd>sp<CR><Cmd>te<CR>
+nnoremap <Leader>tv <Cmd>vs<CR><Cmd>te<CR>
+
 "colorscheme
 set termguicolors
 let g:onedark_terminal_italics = 1
