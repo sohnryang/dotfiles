@@ -72,6 +72,7 @@ noremap <C-p> :Files<CR>
 
 "NERDTree
 let NERDTreeShowHidden = 1
+nnoremap <Leader>f :NERDTreeToggle<CR>
 
 "vim-autoformat settings
 noremap <F3> :Autoformat<CR>
