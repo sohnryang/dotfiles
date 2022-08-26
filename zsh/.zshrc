@@ -51,7 +51,7 @@ compinit -i
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 # editor
-export EDITOR=`which vi`
+export EDITOR=`which nvim`
 
 # default user
 DEFAULT_USER=`whoami`
