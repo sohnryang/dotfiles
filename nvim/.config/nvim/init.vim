@@ -180,6 +180,8 @@ require('dap-go').setup()
 require('dap-python').setup('/usr/bin/python')
 EOF
 nnoremap <silent> <F5> <Cmd>lua require'dapui'.open()<CR><Cmd>lua require'dap'.continue()<CR>
+nnoremap <silent> <Leader><F5> <Cmd>lua require'dap'.terminate()<CR>
+nnoremap <silent> <F8> <Cmd>lua require'dap'.pause()<CR>
 nnoremap <silent> <F10> <Cmd>lua require'dap'.step_over()<CR>
 nnoremap <silent> <F11> <Cmd>lua require'dap'.step_into()<CR>
 nnoremap <silent> <F12> <Cmd>lua require'dap'.step_out()<CR>
