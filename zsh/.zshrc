@@ -67,4 +67,10 @@ function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$
 export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
 export PATH="$HOME/opt/cross/bin:$PATH"
 
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+  export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+  export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+fi
+
 eval $(thefuck --alias)
