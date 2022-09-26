@@ -195,7 +195,7 @@ nnoremap <silent> <Leader>dl <Cmd>lua require'dap'.run_last()<CR>
 "treesitter
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "c", "go", "rust", "python", "typescript", "tsx" },
+  ensure_installed = { "c", "cmake", "cpp", "go", "rust", "python", "typescript", "tsx" },
   sync_install = false,
 
   highlight = {
