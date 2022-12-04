@@ -1,0 +1,42 @@
+{
+  "language_configs": [
+    {
+      "extension": "py",
+      "config": {
+        "language_type": "scripted",
+        "compile_command": [],
+        "run_command": [
+          "python3",
+          "{source_path}"
+        ]
+      }
+    },
+    {
+      "extension": "go",
+      "config": {
+        "language_type": "scripted",
+        "compile_command": [],
+        "run_command": [
+          "go",
+          "run",
+          "{source_path}"
+        ]
+      }
+    },
+    {
+      "extension": "cc",
+      "config": {
+        "language_type": "compiled",
+        "compile_command": [
+          "clang++",
+          "{source_path}",
+          "-o",
+          "{exec_path}"
+        ],
+        "run_command": [
+          "{exec_path}"
+        ]
+      }
+    }
+  ]
+}
