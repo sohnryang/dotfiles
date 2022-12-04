@@ -3,9 +3,9 @@
 	email = loop.infinitely@gmail.com
 	signingkey = A1ABA4C12EA09828E7EAA47CBE7AD6E612E48FB4
 [core]
-	excludesFile = $HOME/.gitignore-global
+	excludesFile = ~/.gitignore-global
 [http]
-	cookiefile = $HOME/.gitcookies
+	cookiefile = ~/.gitcookies
 [init]
 	defaultBranch = main
 [credential]
