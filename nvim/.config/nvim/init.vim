@@ -117,7 +117,7 @@ set conceallevel=1
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 "clang format
-let g:clang_format#code_style = 'google'
+let g:clang_format#code_style = 'llvm'
 
 "coc.nvim settings
 set cmdheight=2
