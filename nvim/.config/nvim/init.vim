@@ -50,6 +50,15 @@ Plug 'brgmnn/vim-opencl'
 Plug 'morhetz/gruvbox'
 Plug 'petRUShka/vim-magma'
 Plug 'petRUShka/vim-sage'
+Plug 'stevearc/aerial.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-tree/nvim-web-devicons'
+Plug 'MunifTanjim/nui.nvim'
+Plug 'nvim-neo-tree/neo-tree.nvim', {'branch': 'v2.x'}
+Plug 'github/copilot.vim'
+Plug 'tpope/vim-surround'
+Plug 'calincru/flex-bison-syntax'
+Plug 'whonore/Coqtail'
 
 call plug#end()
 
@@ -69,6 +78,7 @@ noremap <C-p> :Files<CR>
 
 "NERDTree
 let NERDTreeShowHidden = 1
+nnoremap <Leader>f :Neotree toggle<CR>
 
 "vim-autoformat settings
 noremap <F3> :Autoformat<CR>
@@ -199,4 +209,38 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
+EOF
+
+imap <silent><script><expr> <Leader><Tab> copilot#Accept()
+let g:copilot_enabled = 0
+
+"aerial
+lua <<EOF
+require('aerial').setup({
+  -- optionally use on_attach to set keymaps when aerial has attached to a buffer
+  on_attach = function(bufnr)
+    -- Jump forwards/backwards with '{' and '}'
+    vim.keymap.set('n', '{', '<cmd>AerialPrev<CR>', {buffer = bufnr})
+    vim.keymap.set('n', '}', '<cmd>AerialNext<CR>', {buffer = bufnr})
+  end
+})
+-- You probably also want to set a keymap to toggle aerial
+vim.keymap.set('n', '<leader>s', '<cmd>AerialToggle!<CR>')
+EOF
+
+"neotree
+lua <<EOF
+require('neo-tree').setup({
+  window = {
+    width = 30,
+  },
+  filesystem = {
+    filtered_items = {
+      visible = true, -- when true, they will just be displayed differently than normal items
+      hide_dotfiles = true,
+      hide_gitignored = true,
+      hide_hidden = true, -- only works on Windows for hidden files/directories
+    },
+  },
+})
 EOF
