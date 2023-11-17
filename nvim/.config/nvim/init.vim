@@ -12,7 +12,6 @@ let g:python3_host_prog = $HOME.'/.nvim-py/bin/python'
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/nerdtree'
 Plug 'Raimondi/delimitMate'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -52,8 +51,6 @@ Plug 'morhetz/gruvbox'
 Plug 'petRUShka/vim-magma'
 Plug 'petRUShka/vim-sage'
 
-"should be last
-Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 "split terminal
@@ -72,7 +69,6 @@ noremap <C-p> :Files<CR>
 
 "NERDTree
 let NERDTreeShowHidden = 1
-nnoremap <Leader>f :NERDTreeToggle<CR>
 
 "vim-autoformat settings
 noremap <F3> :Autoformat<CR>
