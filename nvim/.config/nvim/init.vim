@@ -129,6 +129,7 @@ nmap <silent> gd <Plug>(coc-definition)
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-line)
 nnoremap <Leader>d <Plug>(coc-definition)
+nmap <Leader>o <Cmd>CocList outline<CR>
 nnoremap <Leader>en <Plug>(coc-diagnostic-next)
 nnoremap <Leader>ep <Plug>(coc-diagnostic-prev)
 
