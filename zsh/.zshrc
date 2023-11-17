@@ -11,7 +11,6 @@ plugins=(
   npm
   pip
   pylint
-  python
   rand-quote
   rust
   sudo
@@ -74,3 +73,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 eval $(thefuck --alias)
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+export PIPX_DEFAULT_PYTHON=$HOME/.pyenv/shims/python
