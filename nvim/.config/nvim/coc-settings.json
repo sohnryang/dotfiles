@@ -1,20 +1,8 @@
 {
+  "python.pythonPath": "python3",
   "python.formatting.provider": "black",
-  "coc.preferences.formatOnSaveFiletypes": [
-    "javascript",
-    "typescript",
-    "typescriptreact",
-    "python",
-    "rust",
-    "c",
-    "cpp",
-    "java",
-    "json",
-    "go",
-    "tex",
-    "opencl",
-    "css"
-  ],
+  "python.formatting.blackPath": "black",
+  "coc.preferences.formatOnSave": true,
   "languageserver": {
     "veridian": {
       "command": "veridian",
