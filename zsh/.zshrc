@@ -31,8 +31,8 @@ ZSH_THEME=lambda-minimal
 source $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8
-export VISUAL=nvim
-export EDITOR=nvim
+export VISUAL=`which hx`
+export EDITOR=$VISUAL
 
 export ZSH_HIGHLIGHT_STYLES[comment]='none'
 
@@ -48,9 +48,6 @@ compinit -i
 
 # gitignore.io command-line tool
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
-
-# editor
-export EDITOR=`which nvim`
 
 # default user
 DEFAULT_USER=`whoami`
