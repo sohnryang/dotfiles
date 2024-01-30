@@ -1,24 +1,36 @@
+[language-server.scls]
+command = "simple-completion-language-server"
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+
+[language-server.gpt]
+command = "helix-gpt"
+
 [[language]]
-name = "cpp"
+name = "rust"
 auto-format = true
+language-servers = ["rust-analyzer", "gpt"]
 
 [[language]]
 name = "c"
 auto-format = true
 
 [[language]]
-name = "go"
+name = "cpp"
 auto-format = true
+
+[[language]]
+name = "git-commit"
+language-servers = ["scls"]
 
 [[language]]
 name = "python"
-auto-format = true
-language-server = { command = "pyright-langserver", args = ["--stdio"] }
-
-[[language]]
-name = "javascript"
+language-servers = ["pyright", "gpt"]
+formatter = { command = "black", args = ["--quiet", "-"] }
 auto-format = true
 
 [[language]]
-name = "verilog"
-language-server = { command = "veridian" }
+name = "latex"
+language-servers = ["texlab", "scls"]
