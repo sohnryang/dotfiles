@@ -1,0 +1,11 @@
+[[sources]]
+name = "friendly-snippets"
+git = "https://github.com/rafamadriz/friendly-snippets.git"
+
+[[sources.paths]]
+scope = ["git-commit"]
+path = "snippets/gitcommit.json"
+
+[[sources.paths]]
+scope = ["latex"]
+path = "snippets/latex.json"
