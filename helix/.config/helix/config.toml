@@ -13,3 +13,7 @@ hidden = false
 
 [editor.soft-wrap]
 enable = true
+
+[editor.lsp]
+display-inlay-hints = true
+display-messages = true
