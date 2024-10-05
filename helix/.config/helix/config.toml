@@ -2,6 +2,8 @@ theme = "gruvbox"
 
 [editor]
 line-number = "relative"
+true-color = true
+cursorline = true
 
 [editor.cursor-shape]
 insert = "bar"
