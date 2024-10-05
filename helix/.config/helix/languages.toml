@@ -1,17 +1,10 @@
-[language-server.scls]
-command = "simple-completion-language-server"
-
 [language-server.pyright]
 command = "pyright-langserver"
 args = ["--stdio"]
 
-[language-server.gpt]
-command = "helix-gpt"
-
 [[language]]
 name = "rust"
 auto-format = true
-language-servers = ["rust-analyzer", "gpt"]
 
 [[language]]
 name = "c"
@@ -22,15 +15,21 @@ name = "cpp"
 auto-format = true
 
 [[language]]
-name = "git-commit"
-language-servers = ["scls"]
-
-[[language]]
 name = "python"
-language-servers = ["pyright", "gpt"]
+language-servers = ["pyright"]
 formatter = { command = "black", args = ["--quiet", "-"] }
 auto-format = true
 
 [[language]]
-name = "latex"
-language-servers = ["texlab", "scls"]
+name = "markdown"
+text-width = 80
+
+[[language]]
+name = "ocaml"
+formatter = { command = "ocamlformat", args = ["-q", "--name=foo.ml", "-"] }
+auto-format = true
+
+[[language]]
+name = "cmake"
+auto-format = true
+formatter = { command = "cmake-format", args = ["-"] }
